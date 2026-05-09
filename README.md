@@ -82,6 +82,31 @@ Qual versao do banco voce esta usando: MySQL 5.x ou MariaDB 10.x?
 
 After you answer, it should return only SQL.
 
+## Open Dental Paste Safety
+
+Open Dental runs exactly what you paste into its query window. Do not paste Markdown formatting.
+
+Correct:
+
+```sql
+SELECT
+  patient.PatNum,
+  patient.LName,
+  patient.FName
+FROM patient
+WHERE patient.PatStatus = 0;
+```
+
+Do not paste the surrounding Markdown fences:
+
+````text
+```sql
+SELECT ...
+```
+````
+
+If Open Dental shows an error near ````` or `sql`, remove all backticks and paste only the SQL text.
+
 ## Local Search Commands
 
 Search examples:

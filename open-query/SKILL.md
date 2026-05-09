@@ -28,12 +28,24 @@ Do not draft SQL until the user provides one of those versions.
 When producing a query, output **only pure SQL**:
 
 - No Markdown fences.
+- Never include triple backticks such as ```sql or ```.
 - No explanation.
 - No bullets.
 - No comments outside the SQL.
 - SQL comments are allowed only inside the SQL when they are necessary for variables or non-obvious logic.
 
 If the request is ambiguous enough that SQL would likely be wrong, ask the minimum clarification question first.
+
+## Open Dental Paste Safety
+
+Open Dental's query window executes pasted text literally. Before giving final SQL:
+
+- Start the answer directly with SQL, usually `SELECT`, `SET`, or a SQL comment.
+- Do not wrap SQL in Markdown code blocks.
+- Do not include any prose before or after SQL.
+- Avoid non-SQL separators, titles, or labels.
+- If the user reports syntax near ``` or `sql`, explain that Markdown backticks were pasted and provide SQL-only output.
+- If Open Dental rejects multi-statement setup commands such as `SET SESSION`, provide a version that starts directly with `SELECT`.
 
 ## References
 
