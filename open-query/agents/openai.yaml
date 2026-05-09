@@ -1,0 +1,3 @@
+display_name: open-query
+short_description: Open Dental SQL query generation from a fixed query examples snapshot.
+default_prompt: Use open-query to create an Open Dental SQL query.

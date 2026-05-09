@@ -1,0 +1,6 @@
+.DS_Store
+*.pyc
+__pycache__/
+open-query/references/opendental_query_examples_snapshot.html
+open-query/references/query_examples.json
+open-query/references/query_examples_index.md
